@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<html>
+  <body>
+    <h1 id="title">Say CHEEEEEESE!</h1>
+    <p id="description">Hello and thank you for helping us on our new study: type of cheese. 
+      It shouldn't take you more than 5 minutes!
+    </p>
+    <form id="survey-form">
+      <div id="info-input">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" name="name" 
+        placeholder="Name" required><br>
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" name="email" 
+        placeholder="Email" required><br>
+        <label for="number" id="number-label">Age</label>
+        <input id="number" type="number" name="number"
+        placeholder="Age"
+        pattern="[1-9]{2}" 
+        min="18" max="100" required><br>
+        <label for="dropdown" id="dropdown-label">Select your country</label>
+        <select id="dropdown">
+          <option value="uk">United Kingdom</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="italy">Italy</option>
+        </select>
+      </div>
+      <div id="radio-btn">
+        <p>Between each two options, which cheese do you prefer?</p><br>
+        <input id="brie" type="radio" name="brie-camembert" value="brie">
+        <label for="brie" id="brie-label">Brie</label>
+        <input id="camembert" type="radio" name="brie-camembert" value="camembert">
+        <label for="camembert">Camembert</label><br>
+        <input id="comte" type="radio" name="comte-cheddar" value="comte">
+        <label for="comte">Comte</label>
+        <input id="cheddar" type="radio" name="comte-cheddar" value="cheddar">
+        <label for="cheddar">Cheddar</label><br>
+        <input id="goatcheese" type="radio" name="goatcheese-bluecheese" value="goatcheese">
+        <label for="goatcheese">Goat cheese</label>
+        <input id="bluecheese" type="radio" name="goatcheese-bluecheese" value="bluecheese">
+        <label for="bluecheese">Blue cheese</label>
+      </div>
+      <div id="checkboxes">
+        <p>Can we contact you on your Email address?</p>
+        <input id="yes" type="checkbox" name="yes" value="yes">
+        <label for="yes">Yes, sure</label>
+        <input id="no" type="checkbox" name="no" value="no">
+        <label for="no">No, thanks</label>
+      </div>
+      <div id="comment">
+        <label for="comment-box" id="comment-label">Message</label><br>
+        <textarea id="comment-box">
+          If you have any question or comment about this survey, you can leave your message here!
+        </textarea>
+      </div>
+      <div id="submit">
+        <input id="submit-btn" type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>
